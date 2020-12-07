@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+	int x,y,z;;
+	printf("\n Enter Three Numbers \n");
+	scanf("%d%d%d",&x,&y,&z);
+	if(x<y && y<z)
+	{
+		printf("\n z is grteater among all,z=%d \n",z);
+	}
+	else if(y>z && z>x)
+	{
+		printf("\n y is Greater among all, y=%d \n",y);
+	}
+	else if(z<x && y<z)
+	{
+		printf("\n x is greatest, x=%d \n",x);
+	}
+}

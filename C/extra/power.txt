@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+    int base,exponent,result;
+    printf("enter  the value of the base\n");
+    scanf("%d",&base);
+    printf("enter the value of the exponent\n");
+    scanf("%d",&exponent);
+    
+    result=pow(base,exponent);
+    printf("%d is the power of the no",result);
+}

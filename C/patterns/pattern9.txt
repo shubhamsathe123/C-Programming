@@ -1,0 +1,26 @@
+#include<stdio.h>
+void main()
+{
+    int no,i,j;
+    printf("enter the no of rows\n");
+    scanf("%d",&no);
+    
+    for(i=1;i<=4;i++)
+    {
+        for(j=i;j<=4;j++)
+        {
+            printf("%d\t",j);
+        }
+       printf("\n");
+    }
+}
+
+
+enter the no of rows
+4
+1	2	3	4	
+2	3	4	
+3	4	
+4	
+
+

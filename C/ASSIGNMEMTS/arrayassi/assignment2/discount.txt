@@ -1,0 +1,46 @@
+#include<stdio.h>
+void main()
+{
+    int ch,cp;
+    float dis;
+    
+    printf("enter the cp\n");
+    scanf("%d",&cp);
+    
+    printf("1.user is student\n2.user is not student\n");
+    printf("enter the choice\n");
+    scanf("%d",ch);
+    
+    switch(ch)
+    {
+        case 1:
+          if(cp>500)
+          {
+              dis=cp/10;
+              printf("discount is %f",dis);
+          }
+          else
+          {
+              dis=cp/5;
+              printf("discount is %f",dis);
+          }
+          break;
+          
+        case 2:
+          if(cp>500)
+          {
+              dis=cp/8;
+              printf("discount is %f",dis);
+          }
+          else
+          {
+              dis=cp/2;
+              printf("discount is %f",dis);
+          }
+          break;
+          
+        default:
+          printf("invalid choice\n");
+          break;
+    }
+}

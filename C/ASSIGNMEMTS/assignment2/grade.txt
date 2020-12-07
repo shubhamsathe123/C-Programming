@@ -1,0 +1,54 @@
+#include<stdio.h>
+
+void main()
+
+{
+
+    int per;
+
+    printf("enter the percentage\n");
+    scanf("%d",&per);
+  
+
+  
+    if (per>=70)
+
+      {
+  
+      printf("grade is A\n");
+
+       }
+    
+       else if(per>=60 && per<70)
+ 
+       {
+ 
+       printf("grade is B+\n");
+
+       }
+    
+       else if(per>=45 && per<60)
+
+       {
+       
+        printf("grade is B\n");
+    
+       }
+    
+       else if(per>=35 && per<45)
+
+       {
+  
+        printf("grade is C\n");
+ 
+        }
+ 
+       else
+
+       {
+ 
+       printf("fail\n");
+ 
+       
+}
+}

@@ -1,0 +1,48 @@
+#include<stdio.h>
+void main()
+{
+    int arr1[10][10],arr2[10][10],mul[10][10],r,c,i,j,k,sum=0;
+    printf("enter the no of rows and columns\n");
+    scanf("%d%d",&r,&c);
+    
+    printf("enter the matrix1 elements\n");
+    for(i=0;i<=2;i++)
+    {
+        for(j=0;j<=2;j++)
+        {
+            scanf("%d",&arr1[i][j]);
+        }
+    }
+    
+     printf("enter the matrix2 elements\n");
+    for(i=0;i<=2;i++)
+    {
+        for(j=0;j<=2;j++)
+        {
+            scanf("%d",&arr2[i][j]);
+        }
+    }
+    
+    for(i=0;i<=2;i++)
+    {
+        for(j=0;j<=2;j++)
+        {
+            sum=0;
+            for(k=0;k<=2;k++)
+            {
+                sum=sum+arr1[i][k]*arr2[k][j];
+            }
+            mul[i][j]=sum;
+        }
+    }
+    
+    printf("matrix multiplication of the 2matrix is:n");
+    for(i=0;i<=2;i++)
+    {
+        for(j=0;j<=2;j++)
+        {
+            printf("%d\t",mul[i][j]);
+        }
+        printf("\n");
+    }
+}

@@ -1,0 +1,36 @@
+#include <stdio.h>
+ 
+void main()
+{
+    int arr[10][10];
+    int i, j, r, c;
+ 
+    printf("Enter the order of the matrix \n");
+    scanf("%d%d",&r,&c);
+    printf("Enter the coefiicients of the matrix\n");
+    for (i =0;i<r;i++)
+    {
+        for (j = 0; j<c;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("The given matrix is \n");
+    for (i=0;i<r;i++)
+    {
+        for (j = 0; j <c;j++)
+        {
+            printf(" %d", arr[i][j]);
+        }
+        printf("\n");
+    }
+    printf("Transpose of matrix is \n");
+    for (j = 0; j < c; j++)
+    {
+        for (i = 0; i < r; i++)
+        {
+            printf(" %d", arr[i][j]);
+        }
+        printf("\n");
+    }
+}

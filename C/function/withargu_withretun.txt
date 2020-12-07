@@ -1,0 +1,17 @@
+#include<stdio.h>
+int Add(int a,int b);//function declaration
+
+void main()
+{
+    int a,b;
+    printf("enter the values of a and b\n");
+    scanf("%d%d",&a,&b);
+    Add(a,b);
+}
+
+int Add(int no1,int no2)
+{
+    int result;
+    result=no1+no2;
+    printf("result of the no is %d",result);
+}

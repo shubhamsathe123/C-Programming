@@ -1,0 +1,20 @@
+#include<stdio.h>
+void evenodd(int a);
+void main()
+{
+    int a;
+    printf("enter the given no");
+    scanf("%d",&a);
+    evenodd(a);
+}
+void evenodd(x)
+{
+    if(x%2==0)
+    {
+        printf("%d is even no",x);
+    }
+    else
+    {
+        printf("%d is odd no",x);
+    }
+}

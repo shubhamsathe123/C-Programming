@@ -1,0 +1,37 @@
+#include<stdio.h>
+void main()
+{
+int add,sub,mul,div,mod,x,y;
+char ch;
+printf("enter two integer no\n");
+scanf("%d%d",&x,&y);
+while(1)
+{
+printf(" +.Addition  -.subtraction  *.multiplication  /.division e.exit\n");
+printf("Enter choice :\n");
+scanf("%c",&ch);
+switch(ch)
+	{
+		case '+':
+			add=x+y;
+			printf("addition of two no is %d\n",add);
+			break;
+		case '-':
+			sub=x-y;
+			printf("subtraction of two no is%d\n",sub);
+			break;
+		case '*':
+			mul=x*y;
+			printf("multiplication of two no is%d\n",mul);
+			break;
+		case '/':
+			div=x/y;
+			printf("division of two no is%d\n",div);
+			break;	
+		
+			default:
+			printf("invalid output");
+			break;
+	}
+}
+}

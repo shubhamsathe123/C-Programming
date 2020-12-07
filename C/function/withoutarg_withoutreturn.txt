@@ -1,0 +1,16 @@
+#include<stdio.h>
+void CircleArea();
+void main()
+{
+    float area;
+    CircleArea();
+    
+}
+void CircleArea()
+{
+    float pi=3.14,r,ans;
+    printf("enter the value of r");
+    scanf("%f",&r);
+    ans=pi*r*r;
+    printf("area of the circle is %f",ans);
+}

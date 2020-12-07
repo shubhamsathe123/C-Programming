@@ -1,0 +1,15 @@
+#include<stdio.h>
+void volcyl();
+void main()
+{
+    
+    volcyl();
+}
+void volcyl()
+{
+    float pi=3.14,r,h,volume;
+    printf("enter the value of r and h");
+    scanf("%f%f",&r,&h);
+    volume=pi*r*r*h;
+    printf("volume of the cylinde is %f",volume);
+}

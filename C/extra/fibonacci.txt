@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+    int no,first=0,second=1,third,i;
+    printf("enter the limit\n");
+    scanf("%d",&no);
+    
+    for(i=1;i<=no;i++)
+    {
+        printf("%d\n",first);
+        third=first+second;
+        first=second;
+        second=third;
+        
+    }
+}

@@ -1,0 +1,52 @@
+#include<stdio.h>
+void main()
+{
+    int ch,no,square,cube,year;
+    printf("1.finding square and cube of the no\n2.check weather given year is leap or not\n");
+    printf("enter the choice\n");
+    scanf("%d",&ch);
+    
+    switch(ch)
+    {
+        case 1:
+          printf("enter the no\n");
+          scanf("%d",no);
+          square=(no*no);
+          cube=(no*no*no);
+          printf("%d and %d are the square and cube of the no\n",square,cube);
+          break;
+          
+        case 2:
+         printf("enter the year\n");
+         scanf("%d",&year);
+         
+         if(year%4==0)
+         {
+             if(year%100==0)
+             {
+                 if(year%400==0)
+                 {
+                     printf("%d is the leap year\n",year);
+                 }
+                 else
+                 {
+                     printf("%d is not leap year\n",year);
+                 }
+                 
+             }
+             else
+             {
+                 printf("%d is leap year\n",year);
+             }
+         }
+         else 
+         {
+             printf("%d is not leap year\n");
+         }
+         break;
+         
+         default:
+          printf("%d is invalid choice\n",ch);
+          break;
+    }
+}

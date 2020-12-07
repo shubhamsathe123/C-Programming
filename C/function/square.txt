@@ -1,0 +1,17 @@
+#include<stdio.h>
+int Square(int no);//function declaration
+
+void main()
+{
+    int no;
+    printf("enter the no\n");
+    scanf("%d",&no);
+    Square(no);
+}
+
+int Square(int no)
+{
+    int result;
+    result=no*no;
+    printf("square of the no is %d",result);
+}

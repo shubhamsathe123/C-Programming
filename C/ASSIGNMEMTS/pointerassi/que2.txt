@@ -1,0 +1,21 @@
+#include<stdio.h>
+float Add(float *x,float *y);
+void main()
+{
+    float a,b;
+    float *ptr;
+    float **ptr1;
+    
+    printf("enter the values of a and b\n");
+    scanf("%f%f",&a,&b);
+    
+    ptr=&a;
+    ptr1=&b;
+    Add(&a,&b);
+}
+float Add(float *x,float *y)
+{
+    float c;
+    c=*x+*y;
+    printf("addition is %f",c);
+}
